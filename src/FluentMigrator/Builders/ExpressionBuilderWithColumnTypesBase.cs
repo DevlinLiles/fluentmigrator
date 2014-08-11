@@ -77,6 +77,12 @@ namespace FluentMigrator.Builders
             return (NextT)(object)this;
         }
 
+        public NextT AsDateTime2()
+        {
+            Column.Type = DbType.DateTime2;
+            return (NextT)(object)this;
+        }
+
         public NextT AsDecimal()
         {
             Column.Type = DbType.Decimal;
